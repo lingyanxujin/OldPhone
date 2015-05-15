@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <com.tan.oldphone.mview.TitleLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/login_title_bg"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/relative_telephoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp" >
+
+        <ImageView
+            android:id="@+id/image_find_telephoto_import"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/regist_import" />
+
+        <EditText
+            android:id="@+id/et_find_telephoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/image_find_telephoto_import"
+            android:background="@drawable/regist_edit_bg"
+            android:digits="0123456789"
+            android:hint="请输入手机号码"
+            android:padding="@dimen/regist_editor_pading"
+            android:textSize="@dimen/regist_editor_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/image_code_import"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/regist_import" />
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/linear_code_state"
+            android:layout_toRightOf="@+id/image_code_import"
+            android:background="@drawable/regist_edit_bg"
+            android:digits="0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+            android:hint="请输入验证码"
+            android:maxLength="12"
+            android:padding="@dimen/regist_editor_pading"
+            android:textSize="@dimen/regist_editor_size" />
+
+        <LinearLayout
+            android:id="@+id/linear_code_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/image_code_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/regist_correct"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btn_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/btn_regist_code_selector"
+                android:padding="@dimen/regist_editor_pading"
+                android:text="获取验证码"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/regist_editor_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <ImageView
+            android:id="@+id/image_new_pwd_import"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/regist_import" />
+
+        <RelativeLayout
+            android:id="@+id/linear_new_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/image_new_pwd_import"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_new_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/regist_edit_bg"
+                android:digits="0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+                android:ellipsize="end"
+                android:hint="请输入新密码"
+                android:maxLength="20"
+                android:padding="@dimen/regist_editor_pading"
+                android:password="true"
+                android:singleLine="true"
+                android:textSize="@dimen/regist_editor_size" />
+
+            <ImageView
+                android:id="@+id/image_new_pwd_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_eye_selector" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_find_pwd_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_complement_selector"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="马上找回"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

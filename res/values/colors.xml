@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="common_top_bar_blue">#4ebcd3</color>
+    <color name="btn_login_normal">#007086</color>
+    <color name="btn_login_pressed">#303744</color>
+    <color name="btn_logout_normal">#d33f3f</color>
+    <color name="btn_logout_pressed">#DA5A4D</color>
+    <color name="btn_register_normal">#2dafa3</color>
+    <color name="btn_register_pressed">#4ebcd3</color>
+    <color name="common_bottom_bar_normal_bg">#2d2f31</color>
+    <color name="common_bottom_bar_selected_bg">#161718</color>
+    <color name="common_botton_bar_blue">#2ea7e0</color>
+    <color name="common_bg">#fcfcfc</color>
+    <color name="btn_pressed_green_solid">#B6DA53</color>
+    <color name="divider_list">#cccccc</color>
+    <color name="top_bar_normal_bg">#4ebcd3</color>
+    <color name="error_item_color">#F6EBE6</color>
+    <color name="bottom_bar_normal_bg">#2D2F31</color>
+    <color name="bottom_text_color_normal">#ffffff</color>
+    <color name="btn_white_normal">#f7f8f8</color>
+    <color name="btn_white_pressed">#b5b5b6</color>
+    <color name="btn_green_noraml">#68C270</color>
+    <color name="btn_green_pressed">#6FCD78</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="btn_gray_pressed_status">#b5b5b6</color>
+    <color name="btn_gray_pressed">#666667</color>
+    <color name="btn_blue_normal">#1e90ff</color>
+    <color name="btn_blue_pressed">#0066FF</color>
+    <color name="orange">#FFA500</color>
+    <color name="gray_pressed">#b5b5b6</color>
+    <color name="gray_normal">#666667</color>
+    <color name="grid_state_pressed">#1Affffff</color>
+    <color name="grid_state_focused">#80000000</color>
+    <color name="voip_interface_text_color">#bababa</color>
+    <color name="black_deep">#FF000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="home_gray">#f9f8f8</color>
+    <color name="home_line">#acacac</color>
+    <color name="home_black">#e1e2e9</color>
+    <color name="home_item_gray">#bbbbbb</color>
+    <color name="backgroundColor">#E8E8E0</color>
+    <color name="backgroundColorPress">#DBDBD3</color>
+
+    <!-- drop down list header font color -->
+    <color name="drop_down_list_header_font_color">#000000</color>
+    <!-- drop down list header second font color -->
+    <color name="drop_down_list_header_second_font_color">#000000</color>
+    <!-- drop down list footer font color -->
+    <color name="drop_down_list_footer_font_color">#000000</color>
+    
+    <color name="blue">#3b95d2</color>
+    <color name="blue_press">#eb5b4c</color>
+    <color name="main_tab_active">#89bfe4</color>
+    <color name="main_tab_normal">#676869</color>
+    <color name="recommend_name_color">#555555</color>
+    <color name="recommend_type_color">#c4c4c4</color>
+    <color name="pop_blue_press">#9ac7e5</color>
+    <color name="login_title_bg">#f4f3f3</color>
+    <color name="login_title_line">#dcdcdc</color>
+    
+    <color name="my_project_text">#686464</color>
+    <color name="my_project_bg_press">#dbe8f2</color>
+    <color name="my_project_item_text">#868686</color>
+    <color name="my_project_line">#c7c6c6</color>
+    <color name="my_project_name">#262626</color>
+    <color name="my_project_title">#a1a1a1</color>
+    
+    <color name="post_project_icon_bg">#c9eacb</color>
+    <color name="post_project_icon_txt_bg">#97c9a4</color>
+    
+    <color name="project_details_title_bg">#deedf7</color>
+    <color name="project_details_item_bg">#e1e2e9</color>
+    <color name="project_details_txt">#6f6f6f</color>
+    <color name="project_details_line">#c1c1c1</color>
+    
+    <color name="my_personal_txt">#8c8c8c</color>
+    <color name="my_personal_sure">#eb5b4c</color>
+    <color name="my_personal_sure_press">#ec8378</color>
+    <color name="my_personal_bg">#e6eef4</color>
+    <color name="my_personal_title_bg">#3b95d2</color>
+    
+</resources>
