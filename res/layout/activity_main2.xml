@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <TextView
+        android:id="@+id/tvShowInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:textSize="58dp"
+        android:text="请在后台上传数据..."/>
+
+    <com.tan.oldphone.mview.MyGallery
+        android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#90000000"
+        android:scrollbars="none"/>
+
+    <ImageSwitcher
+        android:id="@+id/switcher"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:layout_above="@id/gallery"
+         />
+
+<!--     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/switcher"
+        android:layout_alignTop="@id/switcher"
+        android:layout_marginTop="15dp"
+        android:background="#85000000"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout> -->
+    
+    <LinearLayout  
+        android:id="@+id/llayout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/switcher"
+        android:layout_alignTop="@id/switcher"
+        android:layout_marginTop="15dp"
+        android:background="#85000000"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp" 
+            android:text="外孙女"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/switcher"
+        android:layout_alignBottom="@id/switcher"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:orientation="horizontal" >    
+<!--     <ImageView
+        android:id="@+id/ivDial"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_dial"
+        /> -->
+
+    <ImageView
+        android:id="@+id/ivDial"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/btn_complement_selector3"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:src="@drawable/icon_callphone" />
+    </LinearLayout>
+    
+
+</RelativeLayout>
